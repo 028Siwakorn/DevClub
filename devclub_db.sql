@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2025 at 04:26 AM
+-- Generation Time: Dec 16, 2025 at 05:12 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,7 +39,9 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`admin_id`, `fullname`, `email`, `password`) VALUES
-(1, 'ผู้ดูแลระบบ', 'admin@devclub.com', '123456');
+(1, 'ผู้ดูแลระบบ', 'admin@devclub.com', '123456'),
+(2, 'รัชชานนท์ ลี้เจริญ', 'dewtete@gmail.com', 'te0946475522'),
+(3, 'ศิวกรณ์', 'Siwakron@gmail.com', '123456');
 
 -- --------------------------------------------------------
 
@@ -60,7 +62,16 @@ CREATE TABLE `members` (
 --
 
 INSERT INTO `members` (`member_id`, `fullname`, `email`, `major`, `academic_year`) VALUES
-(2, 'รัชชานนท์ ลี้เจริญ', 'Ratchanon@gmail.com', 'Software Engineer', 2566);
+(3, 'สมชาย ใจดี', 'somchai@example.com', 'คณิตศาสตร์', 2565),
+(4, 'สมหญิง แสนดี', 'somying@example.com', 'ฟิสิกส์', 2564),
+(5, 'ณัฐวุฒิ พงษ์ชัย', 'nattawut@example.com', 'เคมี', 2565),
+(6, 'พรพิมล ศรีสุข', 'pornpimol@example.com', 'ชีววิทยา', 2563),
+(7, 'วิษณุ แก้วใส', 'wisanu@example.com', 'วิทยาการคอมพิวเตอร์', 2565),
+(8, 'อรทัย นิลมงคล', 'ornthai@example.com', 'สถิติ', 2564),
+(9, 'จิรัฏฐ์ ศรีทอง', 'jiratt@example.com', 'วิศวกรรมซอฟต์แวร์', 2565),
+(10, 'กิติพัฒน์ เกียรติวงศ์', 'kitipat@example.com', 'วิทยาการคอมพิวเตอร์', 2563),
+(11, 'สุดารัตน์ แสงทอง', 'sudarat@example.com', 'ฟิสิกส์', 2565),
+(12, 'อนุชา บุญมี', 'anucha@example.com', 'วิศวกรรมซอฟต์แวร์', 2564);
 
 --
 -- Indexes for dumped tables
@@ -88,13 +99,13 @@ ALTER TABLE `members`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `members`
 --
 ALTER TABLE `members`
-  MODIFY `member_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `member_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
